@@ -1,0 +1,27 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Prevents scrollbars */
+  height: 100%;
+}
+
+canvas {
+  display: block; /* Removes the default inline behavior */
+  background-color: white; /* Set canvas background to black */
+  border: 2px solid black;
+  box-sizing: border-box;
+}
+
+#gameContainer {
+  position: relative; /* This will contain the absolute positioned button */
+}
+
+#restartButton {
+  display: none; /* Initially hidden */
+  position: absolute; /* Position relative to the gameContainer */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust to center the button exactly */
+  z-index: 10; /* Ensure it's above the canvas */
+}
+
